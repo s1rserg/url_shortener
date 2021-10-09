@@ -2,6 +2,7 @@ body {
   font-family: "Caveat", cursive;
   width: 75%;
   margin: auto;
+  background-color: #d7d7d7;
 }
 .header {
   display: flex;
@@ -157,4 +158,48 @@ body {
   left: 29%;
   bottom: 0%;
   text-align: center;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cards p {
+  font-size: 35px;
+  margin: 0%;
+}
+
+.cards h2 {
+  font-size: 45px;
+  margin: 0%;
+}
+
+.cards__card {
+  width: 450px;
+  height: 290px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.cards__card2 {
+  margin-top: 100px;
+}
+
+.cards__card3 {
+  margin-top: 200px;
+}
+
+hr {
+  margin-top: 165px;
+  border-radius: 5px;
+  width: 50px;
+  border: none; /* Убираем границу */
+  background-color: cyan; /* Цвет линии */
+  color: cyan; /* Цвет линии для IE6-7 */
+  height: 20px; /* Толщина линии */
+}
+
+.cards__line2 {
+  margin-top: 270px;
 }
