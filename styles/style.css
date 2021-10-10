@@ -116,9 +116,8 @@ a {
 
 .shortener {
   position: relative;
-  display: flex;
-  justify-content: space-between;
   margin-bottom: 0px;
+  width: 100%;
 }
 .shortener__img {
   width: 100%;
@@ -127,8 +126,13 @@ a {
 
 .shortener__form {
   position: absolute;
-  top: 40%;
+  top: 20%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
 }
 
 .shortener__form__inputer {
@@ -136,10 +140,12 @@ a {
   margin-right: 50px;
   border-radius: 20px;
   height: 40px;
-  width: 1055px;
+  max-width: 1055px;
+  width: 80%;
   border: 0px;
   font-family: "Caveat", cursive;
   font-size: 25px;
+  margin-bottom: 3%;
 }
 
 .shortener__form__button {
@@ -147,7 +153,6 @@ a {
   background: cyan;
   border-radius: 20px;
   color: #383838;
-  width: 120px;
   font-family: "Caveat", cursive;
   font-size: 25px;
   border: none;
@@ -182,7 +187,7 @@ a {
 
 .cards__card {
   width: 450px;
-  height: 290px;
+  height: 100%;
   background-color: #fff;
   border-radius: 15px;
 }
