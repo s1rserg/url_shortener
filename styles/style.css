@@ -262,9 +262,6 @@ hr {
   color: #fff;
 }
 
-.footer__list {
-}
-
 .footer__list li {
   font-size: 20px;
   list-style-type: none;
@@ -281,4 +278,17 @@ hr {
 
 .footer__img {
   margin-right: 0px;
+}
+
+.shortened-links {
+  display: column;
+  margin-bottom: 0px;
+}
+
+.shortened-links__link {
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+  background-color: #fff;
+  border-radius: 20px;
 }
