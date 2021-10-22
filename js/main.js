@@ -29,6 +29,9 @@ function shortenLink() {
 
     if (formInput.value.includes(invalidUrl1) || formInput.value.includes(invalidUrl2) || formInput.value.includes(invalidUrl3) || !formInput.value.includes(".")) {
         alertText.style.display = "flex";
+        links1.style.display = "none";
+        links2.style.display = "none";
+        links3.style.display = "none";
         return;
     }
 
