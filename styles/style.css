@@ -285,10 +285,25 @@ hr {
   margin-bottom: 0px;
 }
 
-.shortened-links__link {
+.shortened-links__section {
+  display: flex;
+  width: 100%;
   font-size: 25px;
   text-align: center;
   margin-top: 20px;
   background-color: #fff;
   border-radius: 20px;
+  position: relative;
+  height: 30px;
+}
+
+.shortened-links__link {
+  position: absolute;
+  left: 45%;
+}
+
+.shortened-links__button {
+  position: absolute;
+  left: 97%;
+  cursor: pointer;
 }
