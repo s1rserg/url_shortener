@@ -1,12 +1,16 @@
 const url = "https://api.shrtco.de/v2/shorten?url=";
+const invalidUrl1 = "shrtco.de";
+const invalidUrl2 = "9qr.de";
+const invalidUrl3 = "shiny.link";
 let formInput = document.getElementById("form-input");
 let formButton = document.getElementById("form-button");
 let outputLink1 = document.getElementById("shortened-link1");
 let outputLink2 = document.getElementById("shortened-link2");
 let outputLink3 = document.getElementById("shortened-link3");
-let links1 = document.getElementById("shortened-links1")
-let links2 = document.getElementById("shortened-links2")
-let links3 = document.getElementById("shortened-links3")
+let links1 = document.getElementById("shortened-links1");
+let links2 = document.getElementById("shortened-links2");
+let links3 = document.getElementById("shortened-links3");
+let alertText = document.getElementById("alert-text");
 
 
 
@@ -15,10 +19,18 @@ formButton.addEventListener("click", shortenLink, false);
 links1.style.display = "none";
 links2.style.display = "none";
 links3.style.display = "none";
+alertText.style.display = "none"
+
 
 
 function shortenLink() {
     let link = url + formInput.value;
+    alertText.style.display = "none"
+
+    if (formInput.value.includes(invalidUrl1) || formInput.value.includes(invalidUrl2) || formInput.value.includes(invalidUrl3) || !formInput.value.includes(".")) {
+        alertText.style.display = "flex";
+        return;
+    }
 
     fetch(link)
         .then((response) => {

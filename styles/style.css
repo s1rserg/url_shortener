@@ -158,6 +158,12 @@ a {
   border: none;
 }
 
+.shortener__form__text {
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+}
+
 .info {
   margin-top: 0px;
   display: flex;
