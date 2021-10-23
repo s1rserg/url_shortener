@@ -157,6 +157,7 @@ a {
   font-family: "Caveat", cursive;
   font-size: 25px;
   border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
