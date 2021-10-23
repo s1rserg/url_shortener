@@ -11,6 +11,9 @@ let links1 = document.getElementById("shortened-links1");
 let links2 = document.getElementById("shortened-links2");
 let links3 = document.getElementById("shortened-links3");
 let alertText = document.getElementById("alert-text");
+let tickImg1 = document.getElementById("tickimg1")
+let tickImg2 = document.getElementById("tickimg2")
+let tickImg3 = document.getElementById("tickimg3")
 
 
 
@@ -20,6 +23,9 @@ links1.style.display = "none";
 links2.style.display = "none";
 links3.style.display = "none";
 alertText.style.display = "none"
+tickImg1.style.display = "none";
+tickImg2.style.display = "none";
+tickImg3.style.display = "none";
 
 
 
@@ -49,12 +55,18 @@ function shortenLink() {
         });
 }
 
-function copy(elementId) {
+function copy(elementId, imgId) {
   var aux = document.createElement("input");
 
   aux.setAttribute("value", document.getElementById(elementId).innerHTML);
   document.body.appendChild(aux);
   aux.select();
   document.execCommand("copy");
-  document.body.removeChild(aux);
+    document.body.removeChild(aux);
+    imgId.style.display = "flex";
+    setTimeout(ticksDisappering, 1000, imgId)
+}
+
+function ticksDisappering(imgId) {
+    imgId.style.display = "none";
 }
