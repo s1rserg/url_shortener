@@ -359,6 +359,7 @@ hr {
 @media screen and (max-width: 767px) {
   body {
     width: 100%;
+    align-items: center;
   }
 
   .header__title-link__words {
@@ -371,8 +372,6 @@ hr {
   }
 
   .main {
-    position: relative;
-    align-content: center;
   }
 
   .main__info {
@@ -381,10 +380,14 @@ hr {
 
   .main__info__title {
     text-align: center;
+    width: 100%;
+    font-size: 70px;
   }
 
   .main__info__secondary {
     text-align: center;
+    width: 100%;
+    font-size: 40px;
   }
 
   .main__img {
@@ -420,6 +423,10 @@ hr {
     left: 83%;
   }
 
+  .info__title__main {
+    font-size: 60px;
+  }
+
   .cards {
     display: grid;
   }
@@ -448,7 +455,7 @@ hr {
   }
 
   .boost-section__title {
-    top: 15%;
+    top: 5%;
   }
 
   .footer {
