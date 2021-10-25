@@ -495,7 +495,11 @@ hr {
 
 @media screen and (min-width: 1040px) and (max-width: 1776px) {
   body {
-    width: 99%;
+    width: 100%;
+  }
+
+  .page {
+    padding: 0 7px 0 7px;
   }
 
   .main__info {
@@ -512,8 +516,5 @@ hr {
     text-align: center;
     width: 100%;
     font-size: 40px;
-  }
-
-  .main__img__img {
   }
 }
