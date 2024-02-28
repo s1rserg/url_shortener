@@ -1,3 +1,3 @@
-# url_shortener
-URL Shortener 
-http://r98464we.beget.tech/
+url_shortener
+# URL Shortener and QR Code Generator
+shortly.free.nf
